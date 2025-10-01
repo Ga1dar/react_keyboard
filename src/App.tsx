@@ -29,7 +29,7 @@ export class App extends React.PureComponent<Props, State> {
     return (
       <div className="App">
         {this.state.pressedKey === null ? (
-          <p className="App__message">Nothing was pressed yet</p>
+          <p className="App__message">{this.state.pressedKey}</p>
         ) : (
           <p className="App__message">{this.state.pressedKey}</p>
         )}
